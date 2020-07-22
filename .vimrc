@@ -35,13 +35,14 @@ Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'sheerun/vim-polyglot'
-Plug 'godlygeek/tabular'
+" Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
+Plug 'lervag/vimtex'
 call plug#end()
 
 
@@ -93,3 +94,6 @@ let g:rainbow_active=1
 let g:pandoc#modules#disabled = ['spell', 'folding']
 
 
+" VIM-POLYGLOT -----
+" fix latex-box conflict for vimtex
+let g:polyglot_disabled = ['latex']
