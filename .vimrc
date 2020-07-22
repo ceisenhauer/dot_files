@@ -43,6 +43,7 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'lervag/vimtex'
+Plug 'chrisbra/Colorizer'
 call plug#end()
 
 
