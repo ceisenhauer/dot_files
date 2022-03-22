@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 # ALIASES ---------------------------------------------------------------
-alias lc='colorls -o -g --gs'
+alias lc='colorls -ogA --gs'
 alias tree='colorls --tree=2'
 
 alias zshconf="vim ~/.zshrc"
