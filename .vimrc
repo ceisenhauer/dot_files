@@ -2,18 +2,13 @@
 set nu
 set t_Co=256
 
-"set ttimeout
-"set ttimeoutlen=5
-"set timeoutlen=5
-set noesckeys
-
 set colorcolumn=101
-
 set relativenumber
 
 set mouse=a
 
 "use the globabl clipboard instead of selection clipboard
+"this isn't working
 set clipboard=unnamedplus
 
 set tabstop=4
@@ -25,6 +20,8 @@ autocmd Filetype r setlocal tabstop=2 "expandtab tabstop=2 "shiftwidth=2 softtab
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
+"allow recursive file finding (fuzzy finding)
+set path+=**
 
 " PLUGINS -------------------------------------------------------------------
 " Install vim-plug
@@ -56,6 +53,7 @@ Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'lervag/vimtex'
 Plug 'chrisbra/Colorizer'
 Plug 'tpope/vim-surround'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 
@@ -78,11 +76,12 @@ colorscheme spacecamp "onedark, jellybeans, minimalist
 
 " Enable CursorLine
 set cursorline
-highlight clear CursorLine
+"highlight clear CursorLine
 
 
 " Default Colors for CursorLine
-highlight  CursorLine cterm=underline
+"highlight  CursorLine cterm=underline
+hi CursorLine term=bold cterm=bold guibg=Grey40
 
 
 " LIGHTLINE.VIM -----
@@ -109,5 +108,6 @@ let g:pandoc#modules#disabled = ['spell', 'folding']
 
 
 " VIM.SURROUND -----
-map S ysiw
+" have ctrl-b add <b> tags to selected text
+map ^b S<b>
 
