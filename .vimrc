@@ -53,7 +53,7 @@ Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'lervag/vimtex'
 Plug 'chrisbra/Colorizer'
 Plug 'tpope/vim-surround'
-Plug 'ap/vim-css-color'
+Plug 'chrisbra/Colorizer'
 call plug#end()
 
 
