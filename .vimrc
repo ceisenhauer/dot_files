@@ -42,6 +42,8 @@ let g:polyglot_disabled = ['latex']
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
 Plug 'jpalardy/vim-slime'
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'frazrepo/vim-rainbow'
 Plug 'preservim/nerdcommenter'
