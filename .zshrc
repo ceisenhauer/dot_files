@@ -18,7 +18,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 # ALIASES ---------------------------------------------------------------
 alias lc='colorls -ogA --gs'
-alias tree='colorls --tree=2'
+#alias tree='colorls --tree=2'
 
 alias zshconf="vim ~/.zshrc"
 alias rzsh=". ~/.zshrc && echo '[ZSH] Config reloaded ... @(^,^)@'"
@@ -51,5 +51,17 @@ function pretty_csv {
 # print ;sv with visual space aligning columns
 function pretty_semisv {
 	column -t -s\; -n "$@" | less -F -S -X -K
+}
+
+# git it done (see what i did there?)
+gitout() {
+	git add "$1"
+	git commit -m "${2:-update}"
+	git push
+}
+
+# colorls tree with specified depth
+tree() {
+	colorls --tree="${1:-2}"
 }
 
