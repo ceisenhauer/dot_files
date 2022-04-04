@@ -23,6 +23,9 @@ nnoremap <C-Right> :tabnext<CR>
 "allow recursive file finding (fuzzy finding)
 set path+=**
 
+"enable autosaving; warning : dangerous for readonly
+au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | silent write | endif
+
 " PLUGINS -------------------------------------------------------------------
 " Install vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -107,9 +110,4 @@ let g:rainbow_active=1
 
 " VIM-PANDOC -----
 let g:pandoc#modules#disabled = ['spell', 'folding']
-
-
-" VIM.SURROUND -----
-" have ctrl-b add <b> tags to selected text
-map ^b S<b>
 
