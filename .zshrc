@@ -36,6 +36,7 @@ alias ls_last="ls -alt | head"
 # cd aliases for ongoing projects
 alias covid="cd ~/Documents/epicentre/covid_herat"
 alias measles="cd ~/Documents/epicentre/measles_alerts"
+alias priority="cd ~/Documents/epicentre/measles_priority"
 
 # tmux session aliases for ongoing projects
 # these don't work yet =\...todo for future catherine
