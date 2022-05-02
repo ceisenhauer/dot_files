@@ -26,6 +26,7 @@ alias rzsh=". ~/.zshrc && echo '[ZSH] Config reloaded ... @(^,^)@'"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconf="vim ~/.vimrc"
 alias tmuxconf="vim ~/.tmux.conf"
+alias gitconf="vim ~/.git-credentials"
 
 alias python="python3"
 alias ipython="python -m IPython"
