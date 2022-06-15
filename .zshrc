@@ -41,7 +41,7 @@ alias priority="cd ~/Documents/epicentre/measles_priority"
 alias tinker="cd ~/Documents/packages/tinker"
 alias epiplots="cd ~/Documents/packages/epiplots"
 alias epiboards="cd ~/Documents/packages/epiboards"
-alias dashboard="cd ~/Documents/epicentre/measles_DRC_dashboard"
+alias dashboard="cd ~/Documents/epicentre/dashboard_drc_measles"
 
 # tmux session aliases for ongoing projects
 # these don't work yet =\...todo for future catherine
