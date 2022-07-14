@@ -18,6 +18,7 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 # ALIASES ---------------------------------------------------------------
 alias lc='colorls -ogA --gs'
+alias lclast='colorls -ogAlt --gs'
 #alias tree='colorls --tree=2'
 
 alias zshconf="vim ~/.zshrc"
@@ -27,18 +28,20 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconf="vim ~/.vimrc"
 alias tmuxconf="vim ~/.tmux.conf"
 alias gitconf="vim ~/.git-credentials"
+alias gitwich="git diff --name-only"
 
 alias python="python3"
 alias ipython="python -m IPython"
 
 alias open="xdg-open"
-alias ls_last="ls -alt | head"
+alias lslast="ls -alt | head"
 
 # cd aliases for ongoing projects
 alias covid="cd ~/Documents/epicentre/covid_herat"
 alias measles="cd ~/Documents/epicentre/measles_alerts"
 alias priority="cd ~/Documents/epicentre/measles_priority"
 alias tinker="cd ~/Documents/packages/tinker"
+alias epimaps="cd ~/Documents/packages/epimaps"
 alias epiplots="cd ~/Documents/packages/epiplots"
 alias epiboards="cd ~/Documents/packages/epiboards"
 alias dashboard="cd ~/Documents/epicentre/dashboard_drc_measles"
