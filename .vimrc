@@ -23,8 +23,6 @@ nnoremap <C-Right> :tabnext<CR>
 "allow recursive file finding (fuzzy finding)
 set path+=**
 
-"enable autosaving; warning : dangerous for readonly
-au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | silent write | endif
 
 " PLUGINS -------------------------------------------------------------------
 " Install vim-plug
@@ -59,15 +57,11 @@ Plug 'lervag/vimtex'
 Plug 'chrisbra/Colorizer'
 Plug 'tpope/vim-surround'
 Plug 'chrisbra/Colorizer'
+Plug 'mattn/emmet-vim'
 call plug#end()
 
 
 "" PLUGIN CONFIGURATIONS -----------------------------------------------------
-"" vim-signify -----
-""set updatetime=100
-""let g:signify_realtime = 1
-
-
 " vim-slime -----
 let g:slime_target = "tmux"
 let g:slime_python_ipython = 1
@@ -110,4 +104,8 @@ let g:rainbow_active=1
 
 " VIM-PANDOC -----
 let g:pandoc#modules#disabled = ['spell', 'folding']
+
+
+" EMMET-VIM -----
+let g:user_emmet_leader_key='<Tab>'
 
