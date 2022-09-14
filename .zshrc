@@ -30,6 +30,8 @@ alias tmuxconf="vim ~/.tmux.conf"
 alias gitconf="vim ~/.git-credentials"
 alias gitwich="git diff --name-only"
 
+alias todo="vim ~/Documents/planning/README.md"
+
 alias python="python3"
 alias ipython="python -m IPython"
 
