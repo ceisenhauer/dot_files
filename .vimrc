@@ -11,11 +11,12 @@ set mouse=a
 "this isn't working
 set clipboard=unnamedplus
 
-set tabstop=4
-set shiftwidth=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set expandtab
 
-autocmd Filetype r setlocal tabstop=2 "expandtab tabstop=2 "shiftwidth=2 softtabstop=2
+autocmd Filetype r setlocal tabstop=2 expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
